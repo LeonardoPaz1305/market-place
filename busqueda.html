@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html class="aui" lang="en">
+    <head>
+        <title>Movistar / Beneficios Prepago </title>
+        <meta charset="utf-8">
+        <meta name="robots" content="noindex,nofollow">
+        <meta name="description" content="{page-description}">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--link(rel='apple-touch-icon' sizes="180x180" href='images/favicon/apple-touch-icon.png')-->
+        <!--link(rel='icon' type='image/png' sizes="32x32" href='images/favicon/favicon-32x32.png')-->
+        <!--link(rel='icon' type='image/png' sizes="16x16" href='images/favicon/favicon-16x16.png')-->
+        <!--link(rel='manifest' href='images/favicon/manifest.json')-->
+        <!--link(rel='mask-icon' href='images/favicon/safari-pinned-tab.svg' color='#4eb500')-->
+        <!--link(rel='shortcut icon' href='images/favicon/favicon.ico')-->
+        <!--meta(name='msapplication-TileColor' content='#4eb500')-->
+        <!--meta(name='msapplication-config' content='images/favicon/browserconfig.xml')-->
+        <!--meta(name='theme-color' content='#0044bd')-->
+        <link rel="stylesheet" href="https://empresas.movistar.com.pe/canalonline-peru-neg-theme/css/aui.css">
+        <link rel="stylesheet" href="https://empresas.movistar.com.pe/canalonline-peru-neg-theme/css/main.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body class="movistar--blue">
+        <main>
+            <section class="nateevo-marketPlace-categories">
+                <div class="container">
+                    <div class="marketPlace-categories__header">
+                        <h2 class="title">Elige la categoría que más se adecúa a tu empresa</h2>
+                    </div>
+                    <div class="marketPlace-categories__shared">
+                        <form class="form" action="" method="get">
+                            <div class="form__control">
+                                <input class="form__input" id="busqueda" type="search" name="q" value="E-commerce" required>
+                                <label class="form__label" for="busqueda">Buscar...</label>
+                                <button class="btn form__submit" type="submit"> <span class="icon icon-search">
+                                        <svg>
+                                            <use xlink:href="images/icons/icons.svg#icon-search"></use>
+                                        </svg></span></button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="marketPlace-categories__back" style="display: block;">
+                        <button class="btn"><span class="icon icon-arrow-right">
+                                <svg>
+                                    <use xlink:href="images/icons/icons.svg#icon-arrow-right">   </use>
+                                </svg></span>Volver a categorías            </button>
+                    </div>
+                    <div class="marketPlace-categories__content" id="categoryCards" style="display: none">
+                        <ul class="list row">
+                            <li class="item col l4 s6">
+                                <div class="card horizontal">
+                                    <div class="card-stacked">
+                                        <div class="card-content">
+                                            <h3 class="title">Ventas</h3>
+                                        </div>
+                                        <div class="card-action">
+                                            <button class="btn" onclick="seeMoreDetails(ventas)">ver más<span class="icon icon-arrow-right">
+                                                    <svg>
+                                                        <use xlink:href="images/icons/icons.svg#icon-arrow-right">               </use>
+                                                    </svg></span></button>
+                                        </div>
+                                    </div>
+                                    <div class="card-image">
+                                        <picture>
+                                            <source media="(min-width: 992px)" srcset="images/svgs/ventas.svg"><img srcset="images/svgs/ventas-mobile.svg" alt="Ventas">
+                                        </picture>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item col l4 s6">
+                                <div class="card horizontal">
+                                    <div class="card-stacked">
+                                        <div class="card-content">
+                                            <h3 class="title">Marketing</h3>
+                                        </div>
+                                        <div class="card-action">
+                                            <button class="btn" onclick="seeMoreDetails(marketing)">ver más<span class="icon icon-arrow-right">
+                                                    <svg>
+                                                        <use xlink:href="images/icons/icons.svg#icon-arrow-right">               </use>
+                                                    </svg></span></button>
+                                        </div>
+                                    </div>
+                                    <div class="card-image">
+                                        <picture>
+                                            <source media="(min-width: 992px)" srcset="images/svgs/marketing.svg"><img srcset="images/svgs/marketing-mobile.svg" alt="Marketing">
+                                        </picture>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item col l4 s6">
+                                <div class="card horizontal">
+                                    <div class="card-stacked">
+                                        <div class="card-content">
+                                            <h3 class="title">Facturación</h3>
+                                        </div>
+                                        <div class="card-action">
+                                            <button class="btn" onclick="seeMoreDetails(facturacion)">ver más<span class="icon icon-arrow-right">
+                                                    <svg>
+                                                        <use xlink:href="images/icons/icons.svg#icon-arrow-right">               </use>
+                                                    </svg></span></button>
+                                        </div>
+                                    </div>
+                                    <div class="card-image">
+                                        <picture>
+                                            <source media="(min-width: 992px)" srcset="images/svgs/facturacion.svg"><img srcset="images/svgs/facturacion-mobile.svg" alt="Facturación">
+                                        </picture>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item col l4 s6">
+                                <div class="card horizontal">
+                                    <div class="card-stacked">
+                                        <div class="card-content">
+                                            <h3 class="title">Servicios de pago</h3>
+                                        </div>
+                                        <div class="card-action">
+                                            <button class="btn" onclick="seeMoreDetails(serviciosPago)">ver más<span class="icon icon-arrow-right">
+                                                    <svg>
+                                                        <use xlink:href="images/icons/icons.svg#icon-arrow-right">               </use>
+                                                    </svg></span></button>
+                                        </div>
+                                    </div>
+                                    <div class="card-image">
+                                        <picture>
+                                            <source media="(min-width: 992px)" srcset="images/svgs/servicios-pago.svg"><img srcset="images/svgs/servicio-pago-mobile.svg" alt="Servicios de pago">
+                                        </picture>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item col l4 s6">
+                                <div class="card horizontal">
+                                    <div class="card-stacked">
+                                        <div class="card-content">
+                                            <h3 class="title">Servicios de cobranza</h3>
+                                        </div>
+                                        <div class="card-action">
+                                            <button class="btn" onclick="seeMoreDetails(serviciosCobranza)">ver más<span class="icon icon-arrow-right">
+                                                    <svg>
+                                                        <use xlink:href="images/icons/icons.svg#icon-arrow-right">               </use>
+                                                    </svg></span></button>
+                                        </div>
+                                    </div>
+                                    <div class="card-image">
+                                        <picture>
+                                            <source media="(min-width: 992px)" srcset="images/svgs/servicios-cobranza.svg"><img srcset="images/svgs/servicios-cobranza-mobile.svg" alt="Servicios de cobranza">
+                                        </picture>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item col l4 s6">
+                                <div class="card horizontal">
+                                    <div class="card-stacked">
+                                        <div class="card-content">
+                                            <h3 class="title">Logística y delivery</h3>
+                                        </div>
+                                        <div class="card-action">
+                                            <button class="btn" onclick="seeMoreDetails(logisticaDelivery)">ver más<span class="icon icon-arrow-right">
+                                                    <svg>
+                                                        <use xlink:href="images/icons/icons.svg#icon-arrow-right">               </use>
+                                                    </svg></span></button>
+                                        </div>
+                                    </div>
+                                    <div class="card-image">
+                                        <picture>
+                                            <source media="(min-width: 992px)" srcset="images/svgs/logistica-delivery.svg"><img srcset="images/svgs/logistica-delivery-mobile.svg" alt="Logística y delivery">
+                                        </picture>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item item--collapse col l4 s6">
+                                <div class="card horizontal">
+                                    <div class="card-stacked">
+                                        <div class="card-content">
+                                            <h3 class="title">Ofimática</h3>
+                                        </div>
+                                        <div class="card-action">
+                                            <button class="btn" onclick="seeMoreDetails(ofimatica)">ver más<span class="icon icon-arrow-right">
+                                                    <svg>
+                                                        <use xlink:href="images/icons/icons.svg#icon-arrow-right">               </use>
+                                                    </svg></span></button>
+                                        </div>
+                                    </div>
+                                    <div class="card-image">
+                                        <picture>
+                                            <source media="(min-width: 992px)" srcset="images/svgs/picture-category.svg"><img srcset="images/svgs/picture-category-mobile.svg" alt="Ofimática">
+                                        </picture>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item item--collapse col l4 s6">
+                                <div class="card horizontal">
+                                    <div class="card-stacked">
+                                        <div class="card-content">
+                                            <h3 class="title">Gestión de procesos</h3>
+                                        </div>
+                                        <div class="card-action">
+                                            <button class="btn" onclick="seeMoreDetails(gestionProcesos)">ver más<span class="icon icon-arrow-right">
+                                                    <svg>
+                                                        <use xlink:href="images/icons/icons.svg#icon-arrow-right">               </use>
+                                                    </svg></span></button>
+                                        </div>
+                                    </div>
+                                    <div class="card-image">
+                                        <picture>
+                                            <source media="(min-width: 992px)" srcset="images/svgs/picture-category.svg"><img srcset="images/svgs/picture-category-mobile.svg" alt="Gestión de procesos">
+                                        </picture>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item item--collapse col l4 s6">
+                                <div class="card horizontal">
+                                    <div class="card-stacked">
+                                        <div class="card-content">
+                                            <h3 class="title">Seguridad y respaldo</h3>
+                                        </div>
+                                        <div class="card-action">
+                                            <button class="btn" onclick="seeMoreDetails(seguridadRespaldo)">ver más<span class="icon icon-arrow-right">
+                                                    <svg>
+                                                        <use xlink:href="images/icons/icons.svg#icon-arrow-right">               </use>
+                                                    </svg></span></button>
+                                        </div>
+                                    </div>
+                                    <div class="card-image">
+                                        <picture>
+                                            <source media="(min-width: 992px)" srcset="images/svgs/picture-category.svg"><img srcset="images/svgs/picture-category-mobile.svg" alt="Seguridad y respaldo">
+                                        </picture>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item item--collapse col l6 s6">
+                                <div class="card horizontal">
+                                    <div class="card-stacked">
+                                        <div class="card-content">
+                                            <h3 class="title">Analisis de datos</h3>
+                                        </div>
+                                        <div class="card-action">
+                                            <button class="btn" onclick="seeMoreDetails(analisisDatos)">ver más<span class="icon icon-arrow-right">
+                                                    <svg>
+                                                        <use xlink:href="images/icons/icons.svg#icon-arrow-right">               </use>
+                                                    </svg></span></button>
+                                        </div>
+                                    </div>
+                                    <div class="card-image">
+                                        <picture>
+                                            <source media="(min-width: 992px)" srcset="images/svgs/picture-category.svg"><img srcset="images/svgs/picture-category-mobile.svg" alt="Analisis de datos">
+                                        </picture>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item item--collapse col l6 s12">
+                                <div class="card horizontal">
+                                    <div class="card-stacked">
+                                        <div class="card-content">
+                                            <h3 class="title">Herramientas de aprendizaje</h3>
+                                        </div>
+                                        <div class="card-action">
+                                            <button class="btn" onclick="seeMoreDetails(herramientasAprendizaje)">ver más<span class="icon icon-arrow-right">
+                                                    <svg>
+                                                        <use xlink:href="images/icons/icons.svg#icon-arrow-right">            </use>
+                                                    </svg></span></button>
+                                        </div>
+                                    </div>
+                                    <div class="card-image"><img src="images/svgs/picture-category.svg"></div>
+                                </div>
+                            </li>
+                        </ul>
+                        <button class="btn see__more" id="seeMore" onclick="seeMoreItems(this, categoryCards)"><span class="text-dinamic">&nbsp;</span>categorías<span class="icon icon-arrow-down">
+                                <svg>
+                                    <use xlink:href="images/icons/icons.svg#icon-arrow-down"> </use>
+                                </svg></span></button>
+                    </div>
+                    <div class="marketPlace-result">
+                        <div class="result__header">
+                            <h3 class="title"> <small>Búsqueda:</small><span>"E-commerce"</span></h3>
+                        </div>
+                        <div class="result__content"> 
+                            <ul class="list row"> 
+                                <li class="item col l3 s6">
+                                    <div class="card card--marketPlace">
+                                        <div class="card-image"><img src="images/svgs/tu-tienda-online.svg"></div>
+                                        <div class="card-promotion bg--morado"><span>Desde S/ 59 al mes​</span></div>
+                                        <div class="card-content">
+                                            <h3 class="title"><b>Tu Tienda Online</b><small>Movistar Empresas</small></h3>
+                                            <p class="text">Crea tu e-commerce de forma fácil y con todo lo que necesitas para potenciar tus ventas​.</p>
+                                        </div>
+                                        <div class="card-action"><a class="btn" href="#">Ver más<span class="icon icon-arrow-right">
+                                                    <svg>
+                                                        <use xlink:href="images/icons/icons.svg#icon-arrow-right"></use>
+                                                    </svg></span></a></div>
+                                    </div>
+                                </li>
+                                <li class="item col l3 s6">
+                                    <div class="card card--marketPlace">
+                                        <div class="card-image"><img src="images/svgs/titanpush.svg"></div>
+                                        <div class="card-promotion bg--cian"><span>15% de descuento​</span></div>
+                                        <div class="card-content">
+                                            <h3 class="title"><b>TITANPush</b><small>Socio de Wayra</small></h3>
+                                            <p class="text">Potencia tu e-commerce con​ notificaciones Push y envía​ mensajes personalizados a​ tus visitantes.</p>
+                                        </div>
+                                        <div class="card-action"><a class="btn" href="#">Ver más<span class="icon icon-arrow-right">
+                                                    <svg>
+                                                        <use xlink:href="images/icons/icons.svg#icon-arrow-right"></use>
+                                                    </svg></span></a></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="nateevo-marketPlace-solution">
+                <div class="container"> 
+                    <div class="marketPlace-solution__header"> 
+                        <h2 class="title">Descubre las soluciones más solicitadas</h2>
+                    </div>
+                    <div class="marketPlace-solution__content">
+                        <div class="list row"> 
+                            <div class="item col l3"> 
+                                <div class="card card--marketPlace card--marketPlace-active">
+                                    <div class="card-image"><img src="images/svgs/niubiz.svg"></div>
+                                    <div class="card-promotion bg--cian"><span>Sin comisiones + 35% de descuento​</span></div>
+                                    <div class="card-content">
+                                        <h3 class="title"><b>Niubiz</b><small>Socio de Movistar Empresas​</small></h3>
+                                        <p class="text">Ofrece a tus clientes un pago rápido y seguro, aceptando tarjetas de crédito y débito a través de la app VendeMás de Niubiz.​</p>
+                                    </div>
+                                    <div class="card-action"><a class="btn" href="#">Ver más<span class="icon icon-arrow-right">
+                                                <svg>
+                                                    <use xlink:href="images/icons/icons.svg#icon-arrow-right"></use>
+                                                </svg></span></a></div>
+                                </div>
+                            </div>
+                            <div class="item col l3"> 
+                                <div class="card card--marketPlace">
+                                    <div class="card-image"><img src="images/png/microsoft-365.png"></div>
+                                    <div class="card-promotion bg--morado"><span>Desde S/ 7.90 al mes</span></div>
+                                    <div class="card-content">
+                                        <h3 class="title"><b>Microsoft 365</b><small>Movistar Empresas</small></h3>
+                                        <p class="text">Incrementa la productividad y colaboración de tu empresa llevando tu negocio a cualquier lugar.</p>
+                                    </div>
+                                    <div class="card-action"><a class="btn" href="#">Ver más<span class="icon icon-arrow-right">
+                                                <svg>
+                                                    <use xlink:href="images/icons/icons.svg#icon-arrow-right"></use>
+                                                </svg></span></a></div>
+                                </div>
+                            </div>
+                            <div class="item col l3"> 
+                                <div class="card card--marketPlace">
+                                    <div class="card-image"><img src="images/svgs/chazki.svg"></div>
+                                    <div class="card-promotion bg--cian"><span>30% de descuento</span></div>
+                                    <div class="card-content">
+                                        <h3 class="title"><b>Chazki</b><small>Socio de Wayra</small></h3>
+                                        <p class="text">Servicio de delivery con rutas óptimas, rápido, eficiente y con alto nivel de trazabilidad.</p>
+                                    </div>
+                                    <div class="card-action"><a class="btn" href="#">Ver más<span class="icon icon-arrow-right">
+                                                <svg>
+                                                    <use xlink:href="images/icons/icons.svg#icon-arrow-right"></use>
+                                                </svg></span></a></div>
+                                </div>
+                            </div>
+                            <div class="item col l3"> 
+                                <div class="card card--marketPlace">
+                                    <div class="card-image"><img src="images/svgs/socialgest.svg"></div>
+                                    <div class="card-promotion bg--cian"><span>35% de descuento</span></div>
+                                    <div class="card-content">
+                                        <h3 class="title"><b>SocialGest</b><small>Socio de Wayra​</small></h3>
+                                        <p class="text">Potencia la gestión de tus redes sociales y optimiza las estrategias digitales de tu negocio.​</p>
+                                    </div>
+                                    <div class="card-action"><a class="btn" href="#">Ver más<span class="icon icon-arrow-right">
+                                                <svg>
+                                                    <use xlink:href="images/icons/icons.svg#icon-arrow-right">                                   </use>
+                                                </svg></span></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+        <script src="https://empresas.movistar.com.pe/canalonline-peru-neg-theme/js/min/footer.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
